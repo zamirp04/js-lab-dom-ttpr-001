@@ -1,0 +1,43 @@
+/* ---------- base (normal‑light) theme ---------- */
+:root {
+    --bg: #ffffff;
+    --text: #222222;
+    --accent: #4c6fff;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 620px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ---------- dark theme overrides ---------- */
+body.dark {
+    --bg: #1a1c22;
+    --text: #f1f1f1;
+    --accent: #ffae00;
+}
